@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="25.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLLoginController">
+   <children>
+      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Sign into an existing account:" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" maxWidth="-Infinity" prefHeight="30.0" prefWidth="300.0">
+         <children>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Card Number" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets right="35.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="txtFieldCardNumber" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="175.0">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="160.0" layoutY="178.0" maxWidth="-Infinity" prefHeight="30.0" prefWidth="300.0">
+         <children>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Password" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets right="60.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="txtFieldPassword" cache="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="175.0">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <Button fx:id="btnLogin" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#onLogin" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #1976D2;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#onBack" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #6e6e6e;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</VBox>
